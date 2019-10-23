@@ -60,7 +60,7 @@ while tries <=10 and play==True:#will only play the game if both play is true an
       play=False#as the user has won set the play to false to exit the game
     else:#checks the lost condition, invalid options outside the grid or if already guessed
       if (guess_row < 0 or guess_row > 4) or (guess_col < 0 or guess_col > 4):#these values mean they are out of range of the array
-        print ("Oops, that's not even in the ocean.")
+        print ("I think you selected the land not the sea!")
       elif(board[guess_row][guess_col] == "X"):#if aleady guessed the current position
         print ("You guessed that one already.")
       else:
